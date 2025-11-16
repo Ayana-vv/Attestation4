@@ -7,9 +7,9 @@ b. Авторизация заблокированного пользовате�
 c. e2e-сценарий (под пользователями standard_user и performance_glitch_user):
 i. авторизоваться
 ii. добавить в коризину товары:
-1. Sauce Labs Backpack
-2. Sauce Labs Bolt T-Shirt
-3. Sauce Labs Onesie
+- Sauce Labs Backpack
+- Sauce Labs Bolt T-Shirt
+- Sauce Labs Onesie
 iii. перейти в корзину
 1. проверить отображение 3 товаров
 iv. нажать Checkout
