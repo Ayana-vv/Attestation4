@@ -11,6 +11,7 @@ public class MainPage {
         this.driver = driver;
     }
 
+//    @Step("Добавление товаров в корзину: {productName}")
     public MainPage addToCart(String productName) {
         String id = switch (productName) {
             case "Sauce Labs Backpack" -> "add-to-cart-sauce-labs-backpack";
@@ -22,6 +23,7 @@ public class MainPage {
         return this;
     }
 
+//    @Step("Переход в корзину")
     public void goToCart() {
         driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
     }

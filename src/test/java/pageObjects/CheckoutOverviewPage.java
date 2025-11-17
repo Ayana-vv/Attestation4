@@ -12,6 +12,7 @@ public class CheckoutOverviewPage {
         this.driver = driver;
     }
 
+//    @Step("Проверка суммы заказа: {expectedTotal}")
     public CheckoutOverviewPage checkTotalPrice(String expectedTotal) {
         String totalPrice = driver.findElement(By.xpath("//div[@class='summary_total_label']")).getText();
         Assertions.assertTrue(totalPrice.contains(expectedTotal),
@@ -19,6 +20,7 @@ public class CheckoutOverviewPage {
         return this;
     }
 
+//    @Step("Нажатие кнопки Finish")
     public void clickButtonFinish() {
         driver.findElement(By.xpath("//button[@data-test='finish']")).click();
     }

@@ -12,6 +12,7 @@ public class CheckoutPage {
         this.driver = driver;
     }
 
+//    @Step("Заполнение полей: {firstName} {lastName} {zipCode}")
     public CheckoutPage fullInformation(String firstName,String lastName, String zipCode) {
         driver.findElement(By.id("first-name")).sendKeys(firstName);
         driver.findElement(By.id("last-name")).sendKeys(lastName);
@@ -19,6 +20,7 @@ public class CheckoutPage {
         return this;
     }
 
+//    @Step("Нажатие кнопки Continue")
     public CheckoutOverviewPage clickButtonContinue() {
         driver.findElement(By.id("continue")).click();
         return new CheckoutOverviewPage(driver);

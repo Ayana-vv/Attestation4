@@ -12,6 +12,10 @@ import pageObjects.LoginPage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@DisplayName("Авторизация")
+//@Story("Проверка авторизации пользователей")
+//@Owner("Ayana Baazan")
+
 public class LoginTests {
 
     WebDriver driver;

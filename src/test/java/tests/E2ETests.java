@@ -14,7 +14,8 @@ import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
 @DisplayName("E2E Покупка товаров")
-
+//@Story("Покупка 3 товаров пользователями standard_user и performance_glitch_user")
+//@Owner("Ayana Baazan")
 
 public class E2ETests {
     WebDriver driver;
@@ -32,7 +33,7 @@ public class E2ETests {
     @ParameterizedTest(name = "Пользователь: {0}")
     @ValueSource(strings = {"standard_user", "performance_glitch_user"})
     @DisplayName("Заказ товаров: выбор 3 товаров и их добавление в корзину")
-    @Description("Тест полной покупки для обычного пользователя")
+    @Description("Тест полной покупки для пользователей standard_user и performance_glitch_user.")
     @Tags({@Tag("Позитивный"), @Tag("e2e")})
     public void e2ePurchaseTest(String username) {
         String password = "secret_sauce";
